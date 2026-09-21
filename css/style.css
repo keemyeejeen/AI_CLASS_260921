@@ -1,0 +1,241 @@
+/* ===== 색상 (전체 3가지 색상만 사용) ===== */
+:root {
+  --color-bg: #f8f6f2; /* 전체 배경 */
+  --color-text: #3a332e; /* 메인 텍스트 (차콜) */
+  --color-text-sub: rgba(58, 51, 46, 0.65); /* 보조 텍스트 (차콜 톤 다운) */
+  --color-border: rgba(58, 51, 46, 0.12); /* 구분선 (차콜 톤 다운) */
+  --color-point: #c6bbd4; /* 포인트 컬러 */
+  --color-point-dark: #a89bbd; /* 포인트 컬러 (버튼 hover용) */
+  --color-section-tint: rgba(58, 51, 46, 0.045); /* 섹션 구분용 배경 (차콜 톤 다운) */
+  --color-point-tint: rgba(198, 187, 212, 0.1); /* 섹션 구분용 배경 (포인트 컬러 톤 다운) */
+}
+
+/* ===== 공통 설정 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.2px;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== 1. Navigation ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav-menu a:hover {
+  color: var(--color-point-dark);
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== 2. Hero ===== */
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-sub);
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--color-point);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: var(--color-point-dark);
+}
+
+/* ===== 3. About ===== */
+.about {
+  text-align: center;
+  background-color: var(--color-section-tint);
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--color-text-sub);
+}
+
+/* ===== 4. Shop ===== */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  width: 260px;
+  text-align: center;
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: rgba(198, 187, 212, 0.25);
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--color-point-dark);
+}
+
+.product-card .desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-sub);
+}
+
+/* ===== 5. Location ===== */
+.location {
+  text-align: center;
+  background-color: var(--color-point-tint);
+}
+
+.location p,
+.contact p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-sub);
+}
+
+/* ===== 6. Contact ===== */
+.contact {
+  text-align: center;
+  background-color: var(--color-section-tint);
+}
+
+/* ===== 7. Footer ===== */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid var(--color-border);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-sub);
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 200px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
