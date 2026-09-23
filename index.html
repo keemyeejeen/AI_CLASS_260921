@@ -44,28 +44,7 @@
     <!-- 4. Shop -->
     <section id="shop" class="shop">
       <h2>Shop</h2>
-      <div class="product-list">
-        <div class="product-card">
-          <img class="product-image" src="img/컵.jpg" alt="컵" />
-          <h3>컵</h3>
-          <p class="desc">물결 모양의 투명 찻잔</p>
-          <p class="price">18,000원</p>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image"></div>
-          <h3>조명</h3>
-          <p class="desc">3D프린팅으로 제작한 조명 겸 책받이</p>
-          <p class="price">24,000원</p>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image"></div>
-          <h3>앞치마</h3>
-          <p class="desc">귀여운 토끼가 그려진 방수 앞치마</p>
-          <p class="price">32,000원</p>
-        </div>
-      </div>
+      <div class="product-list" id="productList"></div>
     </section>
 
     <!-- 5. Location -->
@@ -87,6 +66,8 @@
       <p>&copy; <span id="year"></span> HABITER. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
