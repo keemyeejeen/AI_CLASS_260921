@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | HABITER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <a href="../index.html" class="nav-logo">HABITER</a>
+    </header>
+
+    <!-- Login -->
+    <section class="login-section">
+      <div class="login-card">
+        <h1>Login</h1>
+        <p class="login-sub">습관처럼, 다시 만나요</p>
+
+        <form class="login-form">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="password">비밀번호</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+
+          <button type="submit" class="btn login-btn">로그인</button>
+        </form>
+
+        <p class="login-footer">계정이 없으신가요? <a href="signup.html">회원가입</a></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> HABITER. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

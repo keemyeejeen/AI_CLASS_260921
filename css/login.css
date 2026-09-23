@@ -1,0 +1,91 @@
+/* ===== Login Page ===== */
+.navbar .nav-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 170px);
+  padding: 80px 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 48px 36px;
+  text-align: center;
+}
+
+.login-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.login-sub {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 6px;
+}
+
+.login-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-sub);
+  margin-top: 14px;
+}
+
+.login-form label:first-child {
+  margin-top: 0;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--color-text);
+  background-color: #fff;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--color-point-dark);
+}
+
+.login-btn {
+  margin-top: 28px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.login-footer {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+.login-footer a {
+  color: var(--color-point-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
